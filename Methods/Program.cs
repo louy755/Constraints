@@ -7,96 +7,96 @@ namespace Methods
     {
         static void Main(string[] args)
         {
-            // // Luke Warm
-            // // 1- user input for start and end!
-            // Console.WriteLine("1- Please insert from hint 1000!");
-            // int from = int.Parse(Console.ReadLine());
-            // Console.WriteLine("Please insert to hint -1000!");
-            // int to = int.Parse(Console.ReadLine());
-            // // call the methos to print from to
-            // Printer(from, to);
+            // Luke Warm
+            // 1- user input for start and end!
+            Console.WriteLine("1- Please insert from hint 1000!");
+            int from = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please insert to hint -1000!");
+            int to = int.Parse(Console.ReadLine());
+            // call the methos to print from to
+            Printer(from, to);
 
-            // Console.WriteLine(" Get Ready for the next qustion Please ...");
-            // Thread.Sleep(2000);
-            // Console.WriteLine("Are you Ready!!");
+            Console.WriteLine(" Get Ready for the next qustion Please ...");
+            Thread.Sleep(2000);
+            Console.WriteLine("Are you Ready!!");
 
-            // // 2- user input 
-            // Console.WriteLine("2- Please insert start number hint 3!");
-            // int start = int.Parse(Console.ReadLine());
-            // Console.WriteLine("Please insert end number hint 999!");
-            // int end = int.Parse(Console.ReadLine());
-            // //  call the methos to print from to
-            // PrintThree(start, end);
+            // 2- user input 
+            Console.WriteLine("2- Please insert start number hint 3!");
+            int start = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please insert end number hint 999!");
+            int end = int.Parse(Console.ReadLine());
+            //  call the methos to print from to
+            PrintThree(start, end);
 
-            // Console.WriteLine(" Get Ready for the next qustion Please ...");
-            // Thread.Sleep(2000);
-            // Console.WriteLine("Are you Ready!!");
+            Console.WriteLine(" Get Ready for the next qustion Please ...");
+            Thread.Sleep(2000);
+            Console.WriteLine("Are you Ready!!");
 
-            // // 3- user input
-            // Console.WriteLine("3- Please insert array size: ");
-            // int arrSize = int.Parse(Console.ReadLine());
-            // // call the method to print from to
-            // IndexR(arrSize);
+            // 3- user input
+            Console.WriteLine("3- Please insert array size: ");
+            int arrSize = int.Parse(Console.ReadLine());
+            // call the method to print from to
+            IndexR(arrSize);
 
-            // Console.WriteLine(" Get Ready for the next qustion Please ...");
-            // Thread.Sleep(2000);
-            // Console.WriteLine("Are you Ready!!");
+            Console.WriteLine(" Get Ready for the next qustion Please ...");
+            Thread.Sleep(2000);
+            Console.WriteLine("Are you Ready!!");
              
-            // // 4- user input
-            // Console.WriteLine("4- Please insert a Number to check if it Odd or Even: ");
-            // int numberIs = int.Parse(Console.ReadLine());
-            // // call the method
-            // string evenOrOdd = CheckNum(numberIs);
-            // Console.WriteLine(evenOrOdd);
+            // 4- user input
+            Console.WriteLine("4- Please insert a Number to check if it Odd or Even: ");
+            int numberIs = int.Parse(Console.ReadLine());
+            // call the method
+            string evenOrOdd = CheckNum(numberIs);
+            Console.WriteLine(evenOrOdd);
 
-            // Console.WriteLine(" Get Ready for the next qustion Please ...");
-            // Thread.Sleep(2000);
-            // Console.WriteLine("Are you Ready!!");
+            Console.WriteLine(" Get Ready for the next qustion Please ...");
+            Thread.Sleep(2000);
+            Console.WriteLine("Are you Ready!!");
             
-            // // 5- user input
-            // Console.WriteLine("5- Please insert a Number to check if it Pos Or Neg: ");
-            // int nmbrIs = int.Parse(Console.ReadLine());
-            // // call the method
-            // string posOr = PosOrNeg(nmbrIs);
-            // Console.WriteLine(posOr);
+            // 5- user input
+            Console.WriteLine("5- Please insert a Number to check if it Pos Or Neg: ");
+            int nmbrIs = int.Parse(Console.ReadLine());
+            // call the method
+            string posOr = PosOrNeg(nmbrIs);
+            Console.WriteLine(posOr);
 
-            // Console.WriteLine(" Get Ready for the next qustion Please ...");
-            // Thread.Sleep(2000);
-            // Console.WriteLine("Are you Ready!!");
+            Console.WriteLine(" Get Ready for the next qustion Please ...");
+            Thread.Sleep(2000);
+            Console.WriteLine("Are you Ready!!");
             
-            // // 6- user input
-            // Console.WriteLine("6- Please insert your Age or Year you Born to check if you can vote: ");
-            // int ageToVote = int.Parse(Console.ReadLine());
-            // // call the method
-            // string ageVote = VoteValidator(ageToVote);
-            // Console.WriteLine(ageVote);
+            // 6- user input
+            Console.WriteLine("6- Please insert your Age or Year you Born to check if you can vote: ");
+            int ageToVote = int.Parse(Console.ReadLine());
+            // call the method
+            string ageVote = VoteValidator(ageToVote);
+            Console.WriteLine(ageVote);
 
-            // Console.WriteLine(" Get Ready for the next qustion Please ...");
-            // Thread.Sleep(2000);
-            // Console.WriteLine("Are you Ready!!");
+            Console.WriteLine(" Get Ready for the next qustion Please ...");
+            Thread.Sleep(2000);
+            Console.WriteLine("Are you Ready!!");
             
-            // // Heatin Up
-            // // 1- user input range method
-            // Console.WriteLine("1- Please insert number to check if it in the Range 0f -10 to 10: ");
-            // int numRng = int.Parse(Console.ReadLine());
-            // // call the method to print from to
-            // Range(numRng);
+            // Heatin Up
+            // 1- user input range method
+            Console.WriteLine("1- Please insert number to check if it in the Range 0f -10 to 10: ");
+            int numRng = int.Parse(Console.ReadLine());
+            // call the method to print from to
+            Range(numRng);
 
-            // Console.WriteLine(" Get Ready for the next qustion Please ...");
-            // Thread.Sleep(2000);
-            // Console.WriteLine("Are you Ready!!");
+            Console.WriteLine(" Get Ready for the next qustion Please ...");
+            Thread.Sleep(2000);
+            Console.WriteLine("Are you Ready!!");
 
-            // //user input
-            // Console.WriteLine("2- Please insert start number hint 1");
-            // int startIndex = int.Parse(Console.ReadLine());
-            // Console.WriteLine("Please insert end number hint 12");
-            // int endIndex = int.Parse(Console.ReadLine());
-            // //  call the methos to print from to
-            // Multibly(startIndex, endIndex);
+            //user input
+            Console.WriteLine("2- Please insert start number hint 1");
+            int startIndex = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please insert end number hint 12");
+            int endIndex = int.Parse(Console.ReadLine());
+            //  call the methos to print from to
+            Multibly(startIndex, endIndex);
 
-            // Console.WriteLine(" Get Ready for the next qustion Please ...");
-            // Thread.Sleep(2000);
-            // Console.WriteLine("Are you Ready!!");
+            Console.WriteLine(" Get Ready for the next qustion Please ...");
+            Thread.Sleep(2000);
+            Console.WriteLine("Are you Ready!!");
             
             // user input
             Console.WriteLine("3- Please insert number of to print the indexes:");
@@ -104,25 +104,25 @@ namespace Methods
             //  call the methos to print from to
             RandomIndex(idx);
 
-            // Console.WriteLine(" Get Ready for the next qustion Please ...");
-            // Thread.Sleep(2000);
-            // Console.WriteLine("Are you Ready!!");
+            Console.WriteLine(" Get Ready for the next qustion Please ...");
+            Thread.Sleep(2000);
+            Console.WriteLine("Are you Ready!!");
 
-            // // user input
-            // Console.WriteLine("4- Please insert number to genrate your arry and culc the sum:");
-            // int newNum = int.Parse(Console.ReadLine());
-            // //  call the methos to print from to
-            // Compute(newNum);
+            // user input
+            Console.WriteLine("4- Please insert number to genrate your arry and culc the sum:");
+            int newNum = int.Parse(Console.ReadLine());
+            //  call the methos to print from to
+            Compute(newNum);
 
-            // Console.WriteLine(" Get Ready for the next qustion Please ...");
-            // Thread.Sleep(2000);
-            // Console.WriteLine("Are you Ready!!");
+            Console.WriteLine(" Get Ready for the next qustion Please ...");
+            Thread.Sleep(2000);
+            Console.WriteLine("Are you Ready!!");
 
-            // // user input
-            // Console.WriteLine("5- Please insert number to find the cube of the indexes:");
-            // int cubNum = int.Parse(Console.ReadLine());
-            // //  call the methos to print from to
-            // Cuber(cubNum);
+            // user input
+            Console.WriteLine("5- Please insert number to find the cube of the indexes:");
+            int cubNum = int.Parse(Console.ReadLine());
+            //  call the methos to print from to
+            Cuber(cubNum);
 
         }
         //1- Write a method that will print to the console all numbers 1000 through - 1000.
