@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Methods
 {
@@ -6,6 +7,7 @@ namespace Methods
     {
         static void Main(string[] args)
         {
+            // // Luke Warm
             // // 1- user input for start and end!
             // Console.WriteLine("1- Please insert from hint 1000!");
             // int from = int.Parse(Console.ReadLine());
@@ -13,6 +15,10 @@ namespace Methods
             // int to = int.Parse(Console.ReadLine());
             // // call the methos to print from to
             // Printer(from, to);
+
+            // Console.WriteLine(" Get Ready for the next qustion Please ...");
+            // Thread.Sleep(2000);
+            // Console.WriteLine("Are you Ready!!");
 
             // // 2- user input 
             // Console.WriteLine("2- Please insert start number hint 3!");
@@ -22,11 +28,19 @@ namespace Methods
             // //  call the methos to print from to
             // PrintThree(start, end);
 
+            // Console.WriteLine(" Get Ready for the next qustion Please ...");
+            // Thread.Sleep(2000);
+            // Console.WriteLine("Are you Ready!!");
+
             // // 3- user input
             // Console.WriteLine("3- Please insert array size: ");
             // int arrSize = int.Parse(Console.ReadLine());
             // // call the method to print from to
             // IndexR(arrSize);
+
+            // Console.WriteLine(" Get Ready for the next qustion Please ...");
+            // Thread.Sleep(2000);
+            // Console.WriteLine("Are you Ready!!");
              
             // // 4- user input
             // Console.WriteLine("4- Please insert a Number to check if it Odd or Even: ");
@@ -34,6 +48,10 @@ namespace Methods
             // // call the method
             // string evenOrOdd = CheckNum(numberIs);
             // Console.WriteLine(evenOrOdd);
+
+            // Console.WriteLine(" Get Ready for the next qustion Please ...");
+            // Thread.Sleep(2000);
+            // Console.WriteLine("Are you Ready!!");
             
             // // 5- user input
             // Console.WriteLine("5- Please insert a Number to check if it Pos Or Neg: ");
@@ -41,6 +59,10 @@ namespace Methods
             // // call the method
             // string posOr = PosOrNeg(nmbrIs);
             // Console.WriteLine(posOr);
+
+            // Console.WriteLine(" Get Ready for the next qustion Please ...");
+            // Thread.Sleep(2000);
+            // Console.WriteLine("Are you Ready!!");
             
             // // 6- user input
             // Console.WriteLine("6- Please insert your Age or Year you Born to check if you can vote: ");
@@ -48,27 +70,43 @@ namespace Methods
             // // call the method
             // string ageVote = VoteValidator(ageToVote);
             // Console.WriteLine(ageVote);
+
+            // Console.WriteLine(" Get Ready for the next qustion Please ...");
+            // Thread.Sleep(2000);
+            // Console.WriteLine("Are you Ready!!");
             
-            // // section TWO
+            // // Heatin Up
             // // 1- user input range method
-            // Console.WriteLine("1- Please insert number to check if it in the Range: ");
+            // Console.WriteLine("1- Please insert number to check if it in the Range 0f -10 to 10: ");
             // int numRng = int.Parse(Console.ReadLine());
             // // call the method to print from to
             // Range(numRng);
 
-            // user input
+            // Console.WriteLine(" Get Ready for the next qustion Please ...");
+            // Thread.Sleep(2000);
+            // Console.WriteLine("Are you Ready!!");
+
+            // //user input
             // Console.WriteLine("2- Please insert start number hint 1");
             // int startIndex = int.Parse(Console.ReadLine());
             // Console.WriteLine("Please insert end number hint 12");
             // int endIndex = int.Parse(Console.ReadLine());
             // //  call the methos to print from to
             // Multibly(startIndex, endIndex);
+
+            // Console.WriteLine(" Get Ready for the next qustion Please ...");
+            // Thread.Sleep(2000);
+            // Console.WriteLine("Are you Ready!!");
             
-            // // user input
-            // Console.WriteLine("3- Please insert number of to print the indexes:");
-            // int idx = int.Parse(Console.ReadLine());
-            // //  call the methos to print from to
-            // RandomIndex(idx);
+            // user input
+            Console.WriteLine("3- Please insert number of to print the indexes:");
+            int idx = int.Parse(Console.ReadLine());
+            //  call the methos to print from to
+            RandomIndex(idx);
+
+            // Console.WriteLine(" Get Ready for the next qustion Please ...");
+            // Thread.Sleep(2000);
+            // Console.WriteLine("Are you Ready!!");
 
             // // user input
             // Console.WriteLine("4- Please insert number to genrate your arry and culc the sum:");
@@ -76,11 +114,15 @@ namespace Methods
             // //  call the methos to print from to
             // Compute(newNum);
 
-            // user input
-            Console.WriteLine("5- Please insert number to find the cube of the indexes:");
-            int cubNum = int.Parse(Console.ReadLine());
-            //  call the methos to print from to
-            Cuber(cubNum);
+            // Console.WriteLine(" Get Ready for the next qustion Please ...");
+            // Thread.Sleep(2000);
+            // Console.WriteLine("Are you Ready!!");
+
+            // // user input
+            // Console.WriteLine("5- Please insert number to find the cube of the indexes:");
+            // int cubNum = int.Parse(Console.ReadLine());
+            // //  call the methos to print from to
+            // Cuber(cubNum);
 
         }
         //1- Write a method that will print to the console all numbers 1000 through - 1000.
@@ -113,7 +155,7 @@ namespace Methods
             {
                 Random random = new Random(); // new random
                 int nm = random.Next(0, returned.Length); // new random chosen 
-                Console.Write(returned[nm]); // print random
+                Console.WriteLine(returned[nm]); // print random
             }
         }
         // 4- Write a method to check whether a given number is even or odd.
@@ -164,7 +206,7 @@ namespace Methods
             {
               sum *= i; //  accumulating  / sum = sum * i to 
             }
-            Console.WriteLine(sum); // print sum of multiplication
+            Console.WriteLine($" The result of multiplication is {sum}"); // print sum of multiplication
         }
         //3- Write a method that takes a number from the user and returns an array with that many indexes.
         // The indexes shall be random numbers.
@@ -179,7 +221,7 @@ namespace Methods
             {
                 Random rand = new Random();  // new random 
                 int nm = rand.Next(1, arrWanted.Length); // number been chosen 
-                Console.Write(arrWanted[nm]); // print random number
+                Console.WriteLine(arrWanted[nm]); // print random number
             }
         }
         // 4- Write a method to compute the sum of all the elements in an array of integers.
@@ -207,7 +249,6 @@ namespace Methods
                 Console.WriteLine($"Number is: {i} and the cube of {i} is: {cube} "); //print the message
             }
         }
-
 
     }
 }
