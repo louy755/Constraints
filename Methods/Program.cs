@@ -6,48 +6,81 @@ namespace Methods
     {
         static void Main(string[] args)
         {
-            // 1- user input for start and end!
-            Console.WriteLine("1- Please insert from hint 1000!");
-            int from = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please insert to hint -1000!");
-            int to = int.Parse(Console.ReadLine());
-            // call the methos to print from to
-            Printer(from, to);
+            // // 1- user input for start and end!
+            // Console.WriteLine("1- Please insert from hint 1000!");
+            // int from = int.Parse(Console.ReadLine());
+            // Console.WriteLine("Please insert to hint -1000!");
+            // int to = int.Parse(Console.ReadLine());
+            // // call the methos to print from to
+            // Printer(from, to);
 
-            // 2- user input 
-            Console.WriteLine("2- Please insert start number hint 3!");
-            int start = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please insert end number hint 999!");
-            int end = int.Parse(Console.ReadLine());
-            //  call the methos to print from to
-            PrintThree(start, end);
+            // // 2- user input 
+            // Console.WriteLine("2- Please insert start number hint 3!");
+            // int start = int.Parse(Console.ReadLine());
+            // Console.WriteLine("Please insert end number hint 999!");
+            // int end = int.Parse(Console.ReadLine());
+            // //  call the methos to print from to
+            // PrintThree(start, end);
 
-            // 3- user input
-            Console.WriteLine("3- Please insert array size: ");
-            int arrSize = int.Parse(Console.ReadLine());
-            // call the method to print from to
-            IndexR(arrSize);
+            // // 3- user input
+            // Console.WriteLine("3- Please insert array size: ");
+            // int arrSize = int.Parse(Console.ReadLine());
+            // // call the method to print from to
+            // IndexR(arrSize);
              
-            // 4- user input
-            Console.WriteLine("4- Please insert a Number to check if it Odd or Even: ");
-            int numberIs = int.Parse(Console.ReadLine());
-            // call the method
-            string evenOrOdd = CheckNum(numberIs);
-            Console.WriteLine(evenOrOdd);
+            // // 4- user input
+            // Console.WriteLine("4- Please insert a Number to check if it Odd or Even: ");
+            // int numberIs = int.Parse(Console.ReadLine());
+            // // call the method
+            // string evenOrOdd = CheckNum(numberIs);
+            // Console.WriteLine(evenOrOdd);
             
-            // 5- user input
-            Console.WriteLine("5- Please insert a Number to check if it Pos Or Neg: ");
-            int nmbrIs = int.Parse(Console.ReadLine());
-            // call the method
-            string posOr = PosOrNeg(nmbrIs);
-            Console.WriteLine(posOr);
+            // // 5- user input
+            // Console.WriteLine("5- Please insert a Number to check if it Pos Or Neg: ");
+            // int nmbrIs = int.Parse(Console.ReadLine());
+            // // call the method
+            // string posOr = PosOrNeg(nmbrIs);
+            // Console.WriteLine(posOr);
             
-            // 6- user input
-            Console.WriteLine("6- Please insert your Age or Year you Born to check if you can vote: ");
-            int ageToVote = int.Parse(Console.ReadLine());
-            // call the method
-            string ageVote = VoteValidator(ageToVote);
-            Console.WriteLine(ageVote);
+            // // 6- user input
+            // Console.WriteLine("6- Please insert your Age or Year you Born to check if you can vote: ");
+            // int ageToVote = int.Parse(Console.ReadLine());
+            // // call the method
+            // string ageVote = VoteValidator(ageToVote);
+            // Console.WriteLine(ageVote);
+            
+            // // section TWO
+            // // 1- user input range method
+            // Console.WriteLine("1- Please insert number to check if it in the Range: ");
+            // int numRng = int.Parse(Console.ReadLine());
+            // // call the method to print from to
+            // Range(numRng);
+
+            // user input
+            // Console.WriteLine("2- Please insert start number hint 1");
+            // int startIndex = int.Parse(Console.ReadLine());
+            // Console.WriteLine("Please insert end number hint 12");
+            // int endIndex = int.Parse(Console.ReadLine());
+            // //  call the methos to print from to
+            // Multibly(startIndex, endIndex);
+            
+            // // user input
+            // Console.WriteLine("3- Please insert number of to print the indexes:");
+            // int idx = int.Parse(Console.ReadLine());
+            // //  call the methos to print from to
+            // RandomIndex(idx);
+
+            // // user input
+            // Console.WriteLine("4- Please insert number to genrate your arry and culc the sum:");
+            // int newNum = int.Parse(Console.ReadLine());
+            // //  call the methos to print from to
+            // Compute(newNum);
+
+            // user input
+            Console.WriteLine("5- Please insert number to find the cube of the indexes:");
+            int cubNum = int.Parse(Console.ReadLine());
+            //  call the methos to print from to
+            Cuber(cubNum);
 
         }
         //1- Write a method that will print to the console all numbers 1000 through - 1000.
@@ -67,8 +100,8 @@ namespace Methods
                 min += 3; // increment by 3
             }
         }
-        //3- Write a method that takes a number from the user and returns an array with that many indexes. The indexes shall be random numbers.
-
+        //3- Write a method that takes a number from the user and returns an array with that many indexes. 
+        //The indexes shall be random numbers.
         static void IndexR(int size) // method with one param
         {
             int[] returned = new int[size]; // create new array the size will assigned by user
@@ -77,8 +110,10 @@ namespace Methods
                 returned[i] = i + 1; // assign the number to the empty array and increment by one
             }
             foreach(int numb in returned) // foreach to show the array content
-                {
-                Console.WriteLine(numb); // print the numbers in the array
+            {
+                Random random = new Random(); // new random
+                int nm = random.Next(0, returned.Length); // new random chosen 
+                Console.Write(returned[nm]); // print random
             }
         }
         // 4- Write a method to check whether a given number is even or odd.
@@ -113,7 +148,66 @@ namespace Methods
               return $"{age} wish you long helthy life!!"; // brint message wish long helthy life!!
             }
         }
-        
+        // Heatin Up:
+        // 1- Write a method to check if an integer (from the user) is in the range -10 to 10.
+        static void  Range(int rng) // method with one param
+        {   // Ternary operator replaces if statement
+            string result = rng < -10 ? $"{rng} Not In Range!!" : rng <= 10 ? 
+            $"{rng} in Range!" : "Not In Range!!";
+            Console.WriteLine(result); // print message
+        }
+        // 2- Write a method to display the multiplication table(from 1 to 12) of a given integer.
+        static void Multibly(int startIdx, int endIdx) // method with 2 parmas
+        {
+            int sum = 1; // sum  initialized 
+            for(int i = startIdx; i < endIdx; i++) // loop 
+            {
+              sum *= i; //  accumulating  / sum = sum * i to 
+            }
+            Console.WriteLine(sum); // print sum of multiplication
+        }
+        //3- Write a method that takes a number from the user and returns an array with that many indexes.
+        // The indexes shall be random numbers.
+        static void RandomIndex(int random) // method with number
+        {
+            int[] arrWanted = new int[random]; // create new array the size will assigned by user
+            for (int i = 0; i < random; i++) // loop 
+            {
+                arrWanted[i] = i + 1; // assign the number to the empty array and increment by one
+            }
+            foreach(int numb in arrWanted) // foreach to show the array content
+            {
+                Random rand = new Random();  // new random 
+                int nm = rand.Next(1, arrWanted.Length); // number been chosen 
+                Console.Write(arrWanted[nm]); // print random number
+            }
+        }
+        // 4- Write a method to compute the sum of all the elements in an array of integers.
+        static void Compute(int arrSiz)
+        {
+            int[] arrSize = new int[arrSiz]; // create new array the size will assigned by user
+            int sum = 0;
+            for (int i = 0; i < arrSiz; i++) // loop 
+            {
+                arrSize[i] = i + 1 ; // assign the number to the empty array and increment by one
+                sum += arrSize[i]; // we can short cut by this to save one loop throw the arrSize!**
+            }
+            Console.WriteLine(sum); // print the sum!
+        }
+        // 5-Write a method to display the cube of the number up to given an integer.    
+        //(If a user inputs the number 3 the method should print to the console: 
+        //Number is: 1 and the cube of 1 is: 1, 
+        //Number is: 2 and the cube of 2 is: 8, 
+        //Number is: 3 and the cube of 3 is:27)
+        static void Cuber(int arg)
+        {
+            for(int i = 1; i <= arg; i++)
+            {
+                int cube = i * i * i; // find the cube of the current index
+                Console.WriteLine($"Number is: {i} and the cube of {i} is: {cube} "); //print the message
+            }
+        }
+
 
     }
 }
