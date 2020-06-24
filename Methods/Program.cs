@@ -123,7 +123,6 @@ namespace Methods
             int cubNum = int.Parse(Console.ReadLine());
             //  call the methos to print from to
             Cuber(cubNum);
-
         }
         //1- Write a method that will print to the console all numbers 1000 through - 1000.
         static void Printer(int start, int end) // method take 2 Params
@@ -147,15 +146,14 @@ namespace Methods
         static void IndexR(int size) // method with one param
         {
             int[] returned = new int[size]; // create new array the size will assigned by user
+            Random random = new Random(); // new random
             for (int i = 0; i < size; i++) // loop 
             {
-                returned[i] = i + 1; // assign the number to the empty array and increment by one
+                returned[i] = random.Next(100); // assign the random number to the empty array and increment by one
             }
             foreach(int numb in returned) // foreach to show the array content
             {
-                Random random = new Random(); // new random
-                int nm = random.Next(0, returned.Length); // new random chosen 
-                Console.WriteLine(returned[nm]); // print random
+                Console.WriteLine(numb); // print random
             }
         }
         // 4- Write a method to check whether a given number is even or odd.
@@ -197,7 +195,7 @@ namespace Methods
             string result = rng < -10 ? $"{rng} Not In Range!!" : rng <= 10 ? 
             $"{rng} in Range!" : "Not In Range!!";
             Console.WriteLine(result); // print message
-        }
+        } 
         // 2- Write a method to display the multiplication table(from 1 to 12) of a given integer.
         static void Multibly(int startIdx, int endIdx) // method with 2 parmas
         {
@@ -213,15 +211,15 @@ namespace Methods
         static void RandomIndex(int random) // method with number
         {
             int[] arrWanted = new int[random]; // create new array the size will assigned by user
+            Random rand = new Random();  // new random 
             for (int i = 0; i < random; i++) // loop 
             {
-                arrWanted[i] = i + 1; // assign the number to the empty array and increment by one
+                arrWanted[i] = rand.Next(100); // assign the random number to the empty array and increment by one
             }
             foreach(int numb in arrWanted) // foreach to show the array content
             {
-                Random rand = new Random();  // new random 
-                int nm = rand.Next(1, arrWanted.Length); // number been chosen 
-                Console.WriteLine(arrWanted[nm]); // print random number
+                
+                Console.WriteLine(numb); // print random number
             }
         }
         // 4- Write a method to compute the sum of all the elements in an array of integers.
@@ -249,6 +247,5 @@ namespace Methods
                 Console.WriteLine($"Number is: {i} and the cube of {i} is: {cube} "); //print the message
             }
         }
-
     }
 }
